@@ -1,4 +1,4 @@
 ## Internal Support
-- If you're stuck, ask in #dev-help
-- Primary contact: [Your Name]
-- Repo owner: [Your GitHub handle]
+- If you're stuck, reach out for assistance ASAP
+- Primary contact: Cary Jones
+- Repo owner: @cary-opcenter
