@@ -1,0 +1,25 @@
+name: 🎨 UX/UI Glitch
+description: Report a visual or interaction issue
+title: "[GLITCH] <brief description>"
+labels: ["ui", "minor"]
+body:
+  - type: textarea
+    id: location
+    attributes:
+      label: Where is the issue?
+  - type: textarea
+    id: glitch
+    attributes:
+      label: Description of Glitch
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshot / Loom / Notes
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Low – doesn’t block use
+        - Medium – disruptive to flow
+        - High – affects usage or trust

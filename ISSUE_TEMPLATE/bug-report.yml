@@ -1,0 +1,62 @@
+name: 🐛 Bug Report
+description: Report a reproducible bug or unexpected behavior
+title: "[BUG] <brief description>"
+labels: ["bug"]
+assignees: []
+
+body:
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Where did you find the bug? (e.g. Staging, Production, Browser, OS)
+      placeholder: e.g. Staging, Chrome 123, macOS
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Clear steps to replicate the issue.
+      placeholder: |
+        1. Go to Reports → Inventory
+        2. Apply filter: Item = 12345
+        3. Click Export
+        4. Observe missing columns in CSV
+      value: ""
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-result
+    attributes:
+      label: Expected Result
+      description: What did you expect to happen?
+
+  - type: textarea
+    id: actual-result
+    attributes:
+      label: Actual Result
+      description: What actually happened?
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / Recordings
+      description: Add screenshots or Loom recordings
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - 🛑 Blocker – Cannot proceed with main workflow
+        - ⚠️ Major – Key feature broken, needs fixing soon
+        - 🐞 Minor – UI or UX issue
+        - 💅 Enhancement – Not a bug, but could be improved
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / Additional Context

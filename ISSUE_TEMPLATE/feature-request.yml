@@ -1,0 +1,21 @@
+name: 💡 Feature Request
+description: Suggest a new feature or product improvement
+title: "[FEATURE] <brief description>"
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Feature Summary
+  - type: textarea
+    id: use-case
+    attributes:
+      label: User Scenario / Use Case
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Benefits
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / Inspiration

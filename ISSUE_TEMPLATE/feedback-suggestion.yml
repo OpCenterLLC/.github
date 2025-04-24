@@ -1,0 +1,17 @@
+name: ✍️ General Feedback / Suggestion
+description: Log ideas, workflow improvements, or notes from users/stakeholders
+title: "[FEEDBACK] <short title>"
+labels: ["feedback"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: What triggered this feedback?
+  - type: textarea
+    id: idea
+    attributes:
+      label: Feedback or Suggestion
+  - type: textarea
+    id: action
+    attributes:
+      label: Proposed Next Step
