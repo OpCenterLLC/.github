@@ -1,0 +1,55 @@
+name: 🧟‍♂️ Regression Bug
+description: Report a bug that appeared after a recent feature or fix was released
+title: "[REGRESSION] <brief description of the issue>"
+labels: ["bug", "regression"]
+assignees: []
+
+body:
+  - type: input
+    id: linked-feature
+    attributes:
+      label: Linked Feature or Previous Issue
+      description: What feature or issue caused this regression? (Paste issue or PR URL)
+      placeholder: e.g. #123, Feature: Export to CSV
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Describe what’s wrong, even if it used to work
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: What actions lead to the bug?
+      placeholder: |
+        1. Go to Reports → Inventory Summary
+        2. Select Item 12345
+        3. Click "Export"
+        4. File does not download
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should happen?
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What’s actually happening?
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser, device, server, etc.
+      placeholder: e.g. Chrome 123, Windows 11, Staging
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Screenshots, links, logs, recordings, anything useful
