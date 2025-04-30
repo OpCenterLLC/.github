@@ -9,8 +9,8 @@ body:
     id: environment
     attributes:
       label: Environment
-      description: Where did you find the bug? (e.g. Staging, Production, Browser, OS)
-      placeholder: e.g. Staging, Chrome 123, macOS
+      description: Where did you find the bug? (e.g. Live, Staging, Alpha, Dev, Remote-Dev, Browser, OS)
+      placeholder: e.g. Live, Chrome 123, macOS
 
   - type: textarea
     id: steps-to-reproduce
@@ -19,10 +19,9 @@ body:
       description: Clear steps to replicate the issue.
       placeholder: |
         1. Go to Reports → Inventory
-        2. Apply filter: Item = 12345
+        2. Search for item = "12345"
         3. Click Export
         4. Observe missing columns in CSV
-      value: ""
     validations:
       required: true
 
@@ -49,10 +48,10 @@ body:
     attributes:
       label: Severity
       options:
-        - 🛑 Blocker – Cannot proceed with main workflow
         - ⚠️ Major – Key feature broken, needs fixing soon
-        - 🐞 Minor – UI or UX issue
+        - 🐞 Minor – UI or UX issue or other functional issue
         - 💅 Enhancement – Not a bug, but could be improved
+        - 🛑 Blocker – Cannot proceed with dev workflow
     validations:
       required: true
 
